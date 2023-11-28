@@ -3292,8 +3292,6 @@
   with_items:
   - path: /etc/sudoers
   - '{{ sudoers.files }}'
-  excludes:
-    - "*cloud-init*"
   tags:
   - CCE-80351-0
   - DISA-STIG-AMZL-02-010340
