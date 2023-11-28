@@ -3203,7 +3203,9 @@
 - name: Find /etc/sudoers.d/ files
   find:
     paths:
-    - /etc/sudoers.d/
+      - /etc/sudoers.d/
+    excludes:
+      - "*cloud-init*"
   register: sudoers
   tags:
   - CCE-80350-2
@@ -3257,7 +3259,9 @@
 - name: Find /etc/sudoers.d/ files
   find:
     paths:
-    - /etc/sudoers.d/
+      - /etc/sudoers.d/
+    excludes:
+      - "*cloud-init*"
   register: sudoers
   tags:
   - CCE-80351-0
@@ -3288,6 +3292,8 @@
   with_items:
   - path: /etc/sudoers
   - '{{ sudoers.files }}'
+  excludes:
+    - "*cloud-init*"
   tags:
   - CCE-80351-0
   - DISA-STIG-AMZL-02-010340
