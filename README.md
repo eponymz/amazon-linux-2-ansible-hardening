@@ -9,7 +9,7 @@ This Ansible role provides a straightforward way to apply security hardening con
 1. Clone this repository to your local machine.
 
 ```
-   git clone https://github.com/mitre/amazon-linux-2-ansible-hardening.git
+   git clone https://github.com/eponymz/amazon-linux-2-ansible-hardening.git
 ```
 
 Make sure you have Ansible installed on your local system. If you haven't already installed Ansible, you can do so by following the instructions on the Ansible website.
